@@ -91,7 +91,7 @@ export default function HeroSection() {
   return (
     <div className="w-full flex justify-center overflow-x-hidden">
       <section
-        className="relative w-full max-w-[1700px] lg:max-w-[1920px] xl:max-w-[2200px] mx-[5px] lg:mx-auto box-border flex flex-col md:flex-row items-center justify-center bg-gray-100 overflow-visible rounded-3xl lg:rounded-[40px]"
+        className="relative w-full max-w-[1700px] mx-[5px] box-border flex flex-col md:flex-row items-center justify-center bg-gray-100 overflow-visible rounded-3xl"
       >
         {/* Background image & overlay */}
         <div className="absolute inset-0 pointer-events-none z-0">
@@ -106,13 +106,13 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-black/40 rounded-3xl" />
         </div>
         {/* Responsive content */}
-  <div className="relative z-20 w-full h-full flex flex-col md:flex-row items-center md:items-center justify-between px-2 sm:px-4 md:px-14 lg:px-24 xl:px-32 py-6 sm:py-10 md:py-16 lg:py-24 xl:py-32">
-          <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-xl lg:max-w-2xl xl:max-w-3xl">
+        <div className="relative z-20 w-full h-full flex flex-col md:flex-row items-center md:items-center justify-between px-2 sm:px-4 md:px-14 py-6 sm:py-10 md:py-16">
+          <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-xl">
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="text-white text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-4 sm:mb-6 lg:mb-8 xl:mb-10 break-words"
+              className="text-white text-2xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 sm:mb-6 break-words"
             >
               Swiss-regulated<br className="hidden md:block" /> investment platform
             </motion.h1>
@@ -120,18 +120,18 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: 'easeOut', delay: 0.2 }}
-              className="text-white/90 text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-4 sm:mb-6 lg:mb-8 xl:mb-10"
+              className="text-white/90 text-sm sm:text-lg md:text-xl mb-4 sm:mb-6"
             >
               Earn up to 16.5% + Referral 3% and Loyalty 3% returns investing directly in EU businesses
             </motion.p>
-            <div className="flex items-center mb-4 sm:mb-6 lg:mb-8 xl:mb-10 gap-2 sm:gap-3 lg:gap-4 xl:gap-5 flex-wrap">
+            <div className="flex items-center mb-4 sm:mb-6 gap-2 sm:gap-3 flex-wrap">
               <span className="text-white/80 text-sm sm:text-base font-medium">
                 Excellent 4.4 out of 5
               </span>
               <TrustpilotLogo className="mx-1" />
             </div>
             <AnimatedButton
-              className="flex items-center gap-2 sm:gap-3 lg:gap-4 xl:gap-5 text-sm sm:text-lg lg:text-xl xl:text-2xl px-4 sm:px-8 lg:px-12 xl:px-16 py-2 sm:py-4 lg:py-6 xl:py-8 rounded-2xl lg:rounded-3xl mt-1"
+              className="flex items-center gap-2 sm:gap-3 text-sm sm:text-lg px-4 sm:px-8 py-2 sm:py-4 rounded-2xl mt-1"
               onClick={() => router.push('/login')}
             >
               <svg className="w-5 sm:w-6 h-5 sm:h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -142,7 +142,7 @@ export default function HeroSection() {
             </AnimatedButton>
           </div>
           {/* Right: Card */}
-          <div className="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0 lg:mt-0 xl:mt-0">
+          <div className="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
             <div className="relative">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -153,7 +153,7 @@ export default function HeroSection() {
                   whileHover={{ rotateY: 8, scale: 1.04 }}
                   transition={{ duration: 0.5 }}
                   style={{ perspective: 600 }}
-                  className="w-full max-w-[320px] sm:w-64 md:w-80 lg:w-[400px] xl:w-[480px] bg-gray-700/90 rounded-2xl lg:rounded-3xl shadow-lg p-3 sm:p-6 lg:p-8 xl:p-10 text-white cursor-pointer"
+                  className="w-full max-w-[320px] sm:w-64 md:w-80 bg-gray-700/90 rounded-2xl shadow-lg p-3 sm:p-6 text-white cursor-pointer"
                 >
                   <div className="flex items-center justify-between mb-2">
                     <Flag code={cards[cardIdx].flag} />

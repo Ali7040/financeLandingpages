@@ -35,8 +35,8 @@ const TrustpilotStar = () => (
 
 export default function Footer() {
   return (
-    <footer className="bg-[#232628] rounded-[32px] lg:rounded-[48px] max-w-[1700px] lg:max-w-[1920px] xl:max-w-[2200px] px-6 sm:px-10 lg:px-20 xl:px-32 py-14 lg:py-20 xl:py-28 text-gray-300 text-base lg:text-lg xl:text-xl font-sans border-[1.5px] border-[#f6f6f6] mx-1 lg:mx-auto mb-1">
-      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-10 lg:gap-16 xl:gap-20">
+    <footer className="bg-[#232628] rounded-[32px] max-w-[1700px] px-6 sm:px-10 py-14 text-gray-300 text-base font-sans border-[1.5px] border-[#f6f6f6] mx-1 mb-1">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-1 flex flex-col">
           <div className="flex items-center gap-3 mb-8">
             <span className="text-white font-bold text-2xl tracking-wide">UNBIASED ALPHA</span>

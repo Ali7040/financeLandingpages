@@ -94,7 +94,7 @@ export default function Footer() {
         {/* Follow us */}
         <div className="md:col-span-1 flex flex-col items-center md:items-start">
           <span className="text-white font-medium text-xl mb-7">Follow us</span>
-          <div className="grid grid-cols-2 gap-4 mb-7">
+          <div className="flex flex-row flex-wrap gap-3 mb-7 md:grid md:grid-cols-2 md:gap-4">
             <a href="#" className="bg-[#33373a] rounded-xl p-3 flex justify-center items-center hover:bg-[#444]" aria-label="facebook">
               <SocialIcon name="facebook" />
             </a>
@@ -109,7 +109,7 @@ export default function Footer() {
             </a>
           </div>
           <span className="text-white font-medium text-xl mb-4">Community</span>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="flex flex-row flex-wrap gap-3 md:grid md:grid-cols-2 md:gap-4">
             <a href="#" className="bg-[#33373a] rounded-xl p-3 flex justify-center items-center hover:bg-[#444]" aria-label="telegram">
               <SocialIcon name="telegram" />
             </a>

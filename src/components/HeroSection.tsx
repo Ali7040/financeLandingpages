@@ -60,6 +60,8 @@ const Flag = ({ code }: { code: string }) => {
 };
 
 export default function HeroSection() {
+  const { useRouter } = require('next/navigation');
+  const router = useRouter();
   const TrustpilotLogo = ({ className }: { className?: string }) => (
     <span className={`inline-flex items-center ${className ?? ""}`}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-auto mr-2" fill="#22c55e" aria-hidden>
@@ -128,7 +130,10 @@ export default function HeroSection() {
               </span>
               <TrustpilotLogo className="mx-1" />
             </div>
-            <AnimatedButton className="flex items-center gap-2 sm:gap-3 text-sm sm:text-lg px-4 sm:px-8 py-2 sm:py-4 rounded-2xl mt-1">
+            <AnimatedButton
+              className="flex items-center gap-2 sm:gap-3 text-sm sm:text-lg px-4 sm:px-8 py-2 sm:py-4 rounded-2xl mt-1"
+              onClick={() => router.push('/login')}
+            >
               <svg className="w-5 sm:w-6 h-5 sm:h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 8l6 4-6 4V8z" />

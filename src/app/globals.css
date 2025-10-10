@@ -1,3 +1,70 @@
+/* Footer navigation button style */
+.footer-nav-btn {
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.2rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.08);
+}
+.footer-nav-btn:hover,
+.footer-nav-btn:focus {
+  background: #1e40af;
+  color: #fff;
+  box-shadow: 0 4px 12px 0 rgba(30,64,175,0.12);
+}
+/* Footer navigation link style */
+.footer-nav-link {
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  background: #2563eb;
+  color: #fff;
+  text-decoration: underline;
+}
+/* Ticker area hover effect */
+.ticker-area {
+  background-color: #2563eb;
+  transition: background 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.ticker-area:hover {
+  background-color: #000;
+}
+/* Navbar underline animation */
+.nav-underline {
+  position: relative;
+  transition: color 0.2s;
+}
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #2563eb;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  border-radius: 2px;
+}
+.nav-underline:hover::after,
+.nav-underline:focus::after {
+  transform: scaleX(1);
+}
 @import "tailwindcss";
 
 :root {

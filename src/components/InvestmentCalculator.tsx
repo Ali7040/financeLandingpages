@@ -20,7 +20,7 @@ export default function InvestmentCalculator() {
   const futureValue = investment + earnedReturn;
 
   return (
-  <section className="relative w-full min-h-screen flex items-center justify-center bg-black/0 overflow-hidden px-2 sm:px-4 md:px-8 py-6 sm:py-10 md:py-12 rounded-2xl">
+  <section className="relative w-full flex items-center justify-center bg-black/0 overflow-hidden px-1 sm:px-4 md:px-8 py-2 sm:py-6 md:py-10 rounded-xl sm:rounded-2xl">
       {/* Background image full screen - only show on non-mobile */}
       {!isMobile && (
         <div className="absolute inset-0 w-full h-full z-0">
@@ -35,9 +35,9 @@ export default function InvestmentCalculator() {
           <div className="absolute inset-0 bg-black/20" />
         </div>
       )}
-  <div className="relative z-10 w-full max-w-4xl mx-auto bg-white/95 rounded-[24px] sm:rounded-[48px] shadow-lg flex flex-col md:flex-row px-2 sm:px-4 md:px-8 py-4 sm:py-10 md:py-12 gap-4 sm:gap-6 md:gap-5">
+  <div className="relative z-10 w-full max-w-4xl mx-auto bg-white/95 rounded-lg sm:rounded-[32px] shadow-lg flex flex-col md:flex-row px-1 sm:px-4 md:px-8 py-2 sm:py-6 md:py-10 gap-1 sm:gap-4 md:gap-5">
         {/* Left: Inputs */}
-  <div className="flex-1 flex flex-col gap-4 sm:gap-8 justify-between min-w-[120px] sm:min-w-[200px]">
+  <div className="flex-1 flex flex-col gap-2 sm:gap-6 justify-between min-w-[100px] sm:min-w-[200px]">
           <div>
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-1 text-sm sm:text-base md:text-[1.1rem] font-medium font-sans text-black gap-1">
               <span>Initial investment</span>
@@ -90,7 +90,7 @@ export default function InvestmentCalculator() {
         </div>
 
         {/* Right: Results */}
-  <div className="flex-1 flex flex-col justify-between bg-white/90 rounded-[16px] sm:rounded-[40px] px-2 sm:px-6 md:px-8 py-2 sm:py-8 md:py-10 shadow-md min-w-[120px] sm:min-w-[240px] md:min-w-[320px] mt-4 md:mt-0">
+  <div className="flex-1 flex flex-col justify-between bg-white/90 rounded-md sm:rounded-[24px] px-1 sm:px-6 md:px-8 py-1 sm:py-6 md:py-10 shadow-md min-w-[100px] sm:min-w-[240px] md:min-w-[320px] mt-1 md:mt-0">
           {/* Future Value */}
           <div>
             <div className="text-xs sm:text-base md:text-[1.25rem] font-medium font-sans text-black mb-2 sm:mb-3">Future value in 5 years</div>

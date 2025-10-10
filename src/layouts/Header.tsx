@@ -119,16 +119,18 @@ export default function Navbar({NavbarItems}: {NavbarItems: NavbarProps[]}) {
             )}
             {/* Mobile menu dropdown */}
             {menuOpen && (
-              <div className="absolute top-full right-2 mt-2 w-48 bg-white rounded-2xl shadow-lg border border-gray-200 z-50">
-                <div className="flex flex-col py-2">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[calc(100vw-24px)] max-w-[420px] md:max-w-[600px] bg-white rounded-2xl shadow-lg border border-gray-200 z-50 px-2 py-3">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-2 pb-2">
                   {NavbarItems.map((item) => (
-                    <Link key={item.href} href={item.href} className="px-4 py-2 font-semibold hover:text-blue-600 hover:bg-blue-50 rounded transition">
+                    <Link key={item.href} href={item.href} className="px-3 py-2 font-semibold hover:text-blue-600 hover:bg-blue-50 rounded transition text-center">
                       {item.label}
                     </Link>
                   ))}
-                  <div className="border-t border-gray-200 my-2" />
-                  <Link href="/login" className="px-4 py-2 font-semibold hover:text-blue-600 hover:bg-blue-50 rounded transition">Log In</Link>
-                  <Link href="/signup" className=" text-white mx-2 px-4 py-2 font-semibold hover:text-white bg-black rounded-xl shadow hover:bg-gray-900 transition">Sign Up</Link>
+                </div>
+                <div className="border-t border-gray-200 my-2" />
+                <div className="grid grid-cols-2 gap-2">
+                  <Link href="/login" className="px-3 py-2 font-semibold hover:text-blue-600 hover:bg-blue-50 rounded transition text-center">Log In</Link>
+                  <Link href="/signup" className="text-white px-3 py-2 font-semibold hover:text-white bg-black rounded-xl shadow hover:bg-gray-900 transition text-center">Sign Up</Link>
                 </div>
               </div>
             )}
